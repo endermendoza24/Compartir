@@ -1,0 +1,87 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+
+/**
+ *
+ * @author HP
+ */
+public class Empleados {
+    Scanner teclado = new Scanner(System.in);
+        public String nombre;
+        public String apellido;
+        public String dni;
+        public String direccion;
+        public String telefono;
+        public int annios;
+        public double salario;
+        public String supervisor;
+        
+        public Empleados(String nombre, String apellido, String dni, String direccion, String telefono, int annios, double salario, String supervisor)
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.dni = dni;
+            this.direccion = direccion;
+            this.telefono = telefono;
+            this.annios = annios;
+            this.salario = salario;
+            this.supervisor = supervisor;
+
+        }
+        
+        public void imprimirInfor()
+        {
+           System.out.println("Nombre: " + nombre + "\nApellido: " + apellido + "\nDNI: " + dni + "\nDireccion: " +
+             direccion + "\nTelefono: " + telefono + "\nYears: " + annios + "\nSalario: " + salario + "\n\nEmpleado supervisor: " + supervisor   );
+           
+        }
+        
+        public void cambiarSupervisor()
+        {
+            int opcion;
+            int yesNo;
+            System.out.println("*** Su supervisor actual es: " + supervisor + "  ");
+            System.out.println("¿Desea cambiarlo? 1 si.");            
+            yesNo = teclado.nextInt();
+
+            if(yesNo == 1)
+            {
+                System.out.println("*** CAMBIANDO SUPERVISOR *** ");
+                System.out.println(
+                    "1. Fulano\n" +
+                    "2. Sutano\n" +
+                    "3. Merengano");
+              
+                System.out.println("\nIngrese una opcion");                
+                opcion = teclado.nextInt();
+               
+
+                if(opcion == 1)
+                {
+                    System.out.println("Su nuevo supervisor es Fulano");
+                  
+                }
+                else if(opcion == 2)
+                {
+                    System.out.println("Su nuevo superviso es Sutano");
+                   
+                }
+                else if(opcion == 3)
+                {
+                    System.out.println("Su nuevo supervisor es Merengano");
+                   
+                }
+            }
+            else
+            {
+                System.out.println("Elija correctamente");
+                
+            }
+
+
+        }
+}

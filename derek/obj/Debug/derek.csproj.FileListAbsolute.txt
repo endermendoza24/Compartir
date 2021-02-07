@@ -1,0 +1,7 @@
+C:\Users\HP\source\repos\derek\derek\bin\Debug\derek.exe.config
+C:\Users\HP\source\repos\derek\derek\bin\Debug\derek.exe
+C:\Users\HP\source\repos\derek\derek\bin\Debug\derek.pdb
+C:\Users\HP\source\repos\derek\derek\obj\Debug\derek.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\derek\derek\obj\Debug\derek.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\derek\derek\obj\Debug\derek.exe
+C:\Users\HP\source\repos\derek\derek\obj\Debug\derek.pdb
